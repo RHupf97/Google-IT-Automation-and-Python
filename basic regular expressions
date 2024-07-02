@@ -1,0 +1,31 @@
+#Basic Regular Expressions
+#The check_web_address function checks
+#if the text passed qualifies as a top-level web address
+
+import re
+def check_web-address(text):
+  pattern = r"^\S+\.[a-zA-Z]+$"
+  result = re.search(pattern, text)
+  return result != None
+print (check_web_address("gmail.com")) # True
+
+
+#check_time function checks for time format of a 12-hour clock
+#filled in expression to check validity of input times
+
+import re
+def check_time(text):
+   patter = r"\b(?:1[0-2]|0?[1-9]):[0-5][0-9] ?[APap][Mm]"
+   result = search (pattern, text)
+   return result != None
+print(check_time("12:45pm:)) # True
+
+#The contains_acronym checks the texts for the presence of 2+ digits surround by 
+#parentheses, with at least the first char in uppercase, returning true or false for otherwise
+
+import re
+def contains_acronym(text):
+  pattern = r"[A-Z1-9][a-zA-Z1-9]*\"
+  result = re.search(pattern, text)
+  return result != None
+print(contains_acronym("Please do NOT enter without permission!")) #False
