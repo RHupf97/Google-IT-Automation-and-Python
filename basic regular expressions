@@ -1,4 +1,6 @@
 #Basic Regular Expressions
+#circumflex(^) it will match only if the pattern occurs at the start of string
+#($) at the end of a regex will only match is pattern occurs at end
 #The check_web_address function checks
 #if the text passed qualifies as a top-level web address
 
@@ -29,3 +31,6 @@ def contains_acronym(text):
   result = re.search(pattern, text)
   return result != None
 print(contains_acronym("Please do NOT enter without permission!")) #False
+
+
+
